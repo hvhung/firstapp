@@ -3,29 +3,7 @@ use std::io;
 use rand::Rng;
 
 fn main() {
-    // first_look();
     guess1();
-}
-
-fn first_look() {
-    println!("Guess the number!");
-    let secret_number = rand::thread_rng().gen_range(1..101);
-    println!("The secret number is: {}", secret_number);
-    println!("Please input your guess.");
-    /* declare an mutable variable by using mut
-        by default variables are immutable
-     */
-    let mut guess = String::new();
-
-    /* we call stdin() function from io module
-        read_line: this will allow us to HANDLE USER INPUT
-        expect: this will handling potential failure
-     */
-    io::stdin()
-        .read_line(&mut guess)
-        .expect("Failed to read line");
-
-    println!("You guessed: {}", guess);
 }
 
 fn guess1() {
@@ -35,9 +13,12 @@ fn guess1() {
     println!("The secret number is: {}", secret_number);
     loop {
         println!("Please input your guess.");
-
+        // variables by default are immutable, mut keyword will mark it as mutable
         let mut guess = String::new();
 
+        /*  read_line: this will allow us to HANDLE USER INPUT
+            expect: this will handling potential failure
+         */
         io::stdin()
             .read_line(&mut guess)
             .expect("Failed to read line");
