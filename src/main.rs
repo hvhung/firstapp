@@ -1,12 +1,13 @@
-// use sample_primitive;
+mod sample_1;
 
 fn main() {
-    println!("Hello, world!");
-    print_sample_primitive(true);
+    println!("Hello, world! main");
+
+    run_sample_1(false);
 }
 
-fn print_sample_primitive(show_sample: bool) {
+fn run_sample_1(show_sample: bool) {
     if show_sample {
-        // TODO: import another file and use
+        sample_1::run_sample_1();
     }
 }

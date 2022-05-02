@@ -1,3 +1,5 @@
+// use crate::User;
+
 pub struct User {
     active: bool,
     username: String,
