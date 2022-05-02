@@ -1,4 +1,4 @@
-use crate::sample_1;
+// use crate::sample_1;
 
 use std::cmp::Ordering;
 use std::io;
@@ -6,7 +6,7 @@ use rand::Rng;
 
 #[allow(dead_code)]
 pub fn run_sample_1() {
-    guess1();
+    // guess1();
 
     // let input_i32: i32 = 1;
     // if input_i32 == 1 {
@@ -27,23 +27,23 @@ fn calculate_length(s: String) -> (String, usize) {
     (s, length)
 }
 
-#[allow(dead_code)]
-struct User {
-    active: bool,
-    username: String,
-    email: String,
-    sign_in_count: u64
-}
+// #[allow(dead_code)]
+// pub struct User {
+//     active: bool,
+//     username: String,
+//     email: String,
+//     sign_in_count: u64
+// }
 
-#[allow(dead_code)]
-fn define_user() -> User {
-    return User {
-        username: "someone1".to_string(),
-        email: String::from("someone1@example.com"),
-        active: true,
-        sign_in_count: 1
-    }
-}
+// #[allow(dead_code)]
+// fn define_user() -> User {
+//     return User {
+//         username: "someone1".to_string(),
+//         email: String::from("someone1@example.com"),
+//         active: true,
+//         sign_in_count: 1
+//     }
+// }
 
 #[allow(dead_code)]
 fn plus_one(x: i32) -> i32 {
