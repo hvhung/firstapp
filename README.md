@@ -7,6 +7,8 @@
     $ cargo run
 # To check compile code, faster than cargo build
     $ cargo check
+# generate doc
+    $ cargo doc --open
 
 ## troubleshoot - windows
 ### install
